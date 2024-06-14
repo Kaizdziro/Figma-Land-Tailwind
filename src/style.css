@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+body {
+  background-color: #181818;
+}
+
+.custom-width {
+  width: 582px;
+}
+
+.custom-width-desc {
+  width: 249px;
+}
+
+.custom-width-desc-card {
+  width: 268px;
+}
+
+.custom-width-footer {
+  width: 540px;
+}
+
+.card-width {
+  width: 476px;
+  height: 624.52px;
+}
+
+.review-comm {
+  width: 26.875rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .review-comm {
+    width: 19.437rem;
+  }
+
+  .custom-width-footer {
+    width: 270px;
+  }
+
+  .custom-width-desc-card {
+    width: 134px;
+  }
+
+  .custom-width {
+    width: 291px;
+  }
+
+  .card-width {
+    width: 295px;
+    height: 624.52px;
+  }
+
+  
+}
+
+.Testemonials-cards {
+  @apply flex flex-wrap justify-center items-center xl:px-56 xl:gap-5 lg:px-5 lg:gap-5 text-white py-10 sm:flex-row sm:flex-wrap 2sm:flex-nowrap 2sm:flex-col 2sm:px-2 2sm:gap-2;
+}
+
+.Slide-title {
+  @apply flex flex-col py-5 font-normal text-center items-center  text-white;
+}
+
+.prp-btn {
+  @apply transform hover:scale-105 hover:bg-indigo-800 transition ease-out duration-500;
+}
+
+.blk-btn {
+  @apply hover:bg-white transition ease-out duration-500 hover:text-black;
+}
+
+.footer-links {
+  @apply flex columns-4 py-10  text-white xl:justify-between xl:gap-10 xl:px-56 md:px-32 md:gap-5 2sm:columns-2 2sm:flex-wrap 2sm:justify-center 2sm:gap-5;
+}
