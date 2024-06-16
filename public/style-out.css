@@ -634,16 +634,12 @@ video {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
 
-.gap-16 {
-  gap: 4rem;
+.gap-32 {
+  gap: 8rem;
 }
 
 .gap-5 {
@@ -748,6 +744,10 @@ video {
   padding-left: 0.75rem;
 }
 
+.pl-32 {
+  padding-left: 8rem;
+}
+
 .pl-7 {
   padding-left: 1.75rem;
 }
@@ -766,6 +766,10 @@ video {
 
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pt-52 {
+  padding-top: 13rem;
 }
 
 .pt-6 {
@@ -913,6 +917,14 @@ body {
   }
 }
 
+@media (min-width: 1536px) {
+  .Testemonials-cards {
+    gap: 1.25rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+}
+
 .Slide-title {
   display: flex;
   flex-direction: column;
@@ -963,8 +975,8 @@ body {
   display: flex;
   -moz-columns: 4;
        columns: 4;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 7rem;
+  padding-top: 16rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -989,8 +1001,8 @@ body {
 
 @media (min-width: 1280px) {
   .footer-links {
-    justify-content: space-between;
-    gap: 2.5rem;
+    justify-content: center;
+    gap: 5rem;
     padding-left: 14rem;
     padding-right: 14rem;
   }
@@ -1017,6 +1029,10 @@ body {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
+
+  .\32sm\:pt-10 {
+    padding-top: 2.5rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1026,10 +1042,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:basis-1\/2 {
-    flex-basis: 50%;
-  }
-
   .md\:columns-2 {
     -moz-columns: 2;
          columns: 2;
@@ -1039,8 +1051,48 @@ body {
     flex-direction: row;
   }
 
+  .md\:justify-normal {
+    justify-content: normal;
+  }
+
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
+  .md\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .md\:pl-5 {
+    padding-left: 1.25rem;
+  }
+
+  .md\:pl-32 {
+    padding-left: 8rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:justify-normal {
+    justify-content: normal;
+  }
+
+  .lg\:pl-32 {
+    padding-left: 8rem;
   }
 }
 
